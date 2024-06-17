@@ -1,0 +1,114 @@
+*{
+padding: 0;
+margin: 0;
+font-family: 'poppins',sans-serif;
+box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background: lightseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .box{
+    height: 90vh;
+    background-color: #fff;
+    width: 90%;
+}
+
+.box h1{
+    text-align: center;
+    margin: 2.5rem ;
+    background: rgb(0, 132, 255);
+    color: #fff;
+    border-radius: 5px;
+    padding: 1.5rem;
+    font-size: 3rem;
+}
+
+.data{
+    
+    height: 65vh;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.day{
+    /* border: 5px solid red; */
+    height: 60vh;
+    width: 50%;
+}
+
+.workout{
+    /* border: 5px solid red; */
+    height: 60vh;
+    width: 50%;
+}
+
+h2{
+    text-align: center;
+    margin: 1.5rem;
+    background: rgb(0, 132, 255);
+    color: #fff;
+    height: 6vh;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.workouts,.days{
+    border: 2px solid;
+    height: 45vh;
+    display: flex;
+    font-size: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 132, 255);
+    color: white;
+    border-radius: 10px;
+    margin: 10px 20px;
+}
+
+h3{
+    /* border: 1px solid black; */
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem 0;
+    font-size: 25px;
+    padding-left: 4rem;
+}
+
+
+/* making this responsive */
+
+@media (max-width: 400px) {
+    .container .box{
+        width: 100%;
+    }
+
+    .data{
+        gap: 2px;
+    }
+    h3{
+        font-size: 15px;
+        padding-left: 10px;
+        border-bottom: 1px solid silver;
+    }
+
+    .days{
+        justify-content: center;
+    }
+    .workouts{
+        justify-content: start;
+        padding-top: 40px;
+    }
+
+    .workout{
+        width: 70vw;
+
+    }
+}
